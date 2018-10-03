@@ -1,0 +1,54 @@
+body 
+{
+    background-color : #F3F3F3;
+	margin : 0px;
+}
+
+h1 
+{
+    color : black;
+}
+
+.content
+{
+	margin : auto;
+	text-align : center;
+}
+
+#mainHeader
+{
+	padding : 10px 15px;
+    background : #FFFFFF;
+}
+
+#error
+{
+	color : red;
+    font-size : 18px;
+}
+
+
+table 
+{
+	width : 70%;
+	text-align : left;
+	border-collapse : collapse;
+	margin : 0 auto;
+}
+
+table td, table th 
+{
+	border : 1px solid #AAAAAA;
+	padding : 3px 2px;
+}
+
+table thead th
+{
+	font-size : 15px;
+	font-weight : bold;
+}
+ 
+table tr:first-child td 
+{
+	background : #BFBFBF;
+}

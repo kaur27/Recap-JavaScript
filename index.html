@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<meta http-equiv = "content-type" content = "text/html; charset=utf-8"/>
+		<title>Generate Payslip</title>
+		<link rel = "stylesheet" href = "css/style.css">
+		<script src = "downloadedFiles/jquery.js"></script>
+		<script type = "text/javascript" src = "javascriptFiles/validatePayPeriod.js"></script>
+		<script type = "text/javascript" src = "javascriptFiles/validateAnnualSalary.js"></script>
+		<script type = "text/javascript" src = "javascriptFiles/validateSuperRate.js"></script>
+		<script type = "text/javascript" src = "javascriptFiles/validateInputLine.js"></script>
+		<script type = "text/javascript" src = "javascriptFiles/calculateGrossIncome.js"></script>
+		<script type = "text/javascript" src = "javascriptFiles/calculateIncomeTax.js"></script>
+		<script type = "text/javascript" src = "javascriptFiles/calculateNetIncome.js"></script>
+		<script type = "text/javascript" src = "javascriptFiles/calculateSuper.js"></script>
+		<script type = "text/javascript" src = "javascriptFiles/isABlankLine.js"></script>	
+		<script type = "text/javascript" src = "javascriptFiles/generateOutputLine.js"></script>
+		<script type = "text/javascript" src = "javascriptFiles/generateOutput.js"></script>			
+		<script type = "text/javascript" src = "javascriptFiles/processFile.js"></script>		
+		<script type = "text/javascript" src = "javascriptFiles/createCsvFile.js"></script>
+	</head>
+	
+	<body>
+		<div class = "content">		
+			<div id = "mainHeader">
+				<h1>Employee Monthly Pay Slip Generator</h1>
+			</div>
+			
+			<div>
+				<form>
+					<fieldset>
+						<label for = "csvFileInput"> CSV File:</label>
+						<input type = "file" id = "csvFileInput" onchange = "handleFiles(this.files)" accept = ".csv,.txt">
+					</fieldset>
+				</form>
+			</div>
+			
+			<div id = "error">
+			</div>
+			
+			<div id = "output">
+			</div>
+		</div>
+	</body>
+</html>
